@@ -1,50 +1,129 @@
-# Welcome to your Expo app 👋
+# FuelTracker 🚗⛽
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A comprehensive React Native mobile app for tracking vehicle fuel consumption, maintenance, and performance analytics. Built with Expo and React Navigation.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Fuel Tracking**: Log and monitor your vehicle's fuel consumption over time
+- **Maintenance Logs**: Keep records of all vehicle maintenance activities
+- **Analytics & Reports**: Visualize fuel efficiency trends and patterns
+- **History**: View complete history of all fuel fill-ups and maintenance records
+- **Vehicle Management**: Manage multiple vehicles with personalized settings
+- **Exploration**: Browse and analyze vehicle data with interactive charts
 
+## Download & Installation
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo CLI (optional, but recommended)
+
+### Steps to Install
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/himal-cmb/FuelTracker.git
+   cd FuelTracker
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
+## Running the App
 
-   ```bash
-   npx expo start
-   ```
+### Development Mode
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+Start the development server:
 ```bash
-npm run reset-project
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Or using Expo CLI directly:
+```bash
+npx expo start
+```
 
-## Learn more
+### Run on Different Platforms
 
-To learn more about developing your project with Expo, look at the following resources:
+After running `npm start`, choose an option:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **Android Emulator**
+  ```bash
+  Press 'a' or npx expo start --android
+  ```
 
-## Join the community
+- **iOS Simulator** (macOS only)
+  ```bash
+  Press 'i' or npx expo start --ios
+  ```
 
-Join our community of developers creating universal apps.
+- **Web Browser**
+  ```bash
+  Press 'w' or npx expo start --web
+  ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Expo Go App** (easiest for testing on physical device)
+  - Download Expo Go from App Store or Google Play
+  - Scan the QR code displayed in terminal
+
+## Use Cases
+
+- **Personal Vehicle Owners**: Track fuel efficiency and maintenance schedules
+- **Fleet Managers**: Monitor multiple vehicles' performance metrics
+- **Drivers**: Optimize driving habits based on fuel consumption data
+- **Maintenance Planning**: Get insights into maintenance patterns and costs
+- **Budget Planning**: Analyze fuel expenses and predict future costs
+
+## Project Structure
+
+```
+├── app/              # Main app screens and routing
+│   ├── (tabs)/       # Tab-based navigation screens
+│   │   ├── index.tsx         # Home screen
+│   │   ├── analysis.tsx       # Analytics & reports
+│   │   ├── explore.tsx        # Data exploration
+│   │   ├── history.tsx        # Fuel & maintenance history
+│   │   └── maintenance.tsx    # Maintenance management
+│   ├── _layout.tsx   # Root layout
+│   └── modal.tsx     # Modal screens
+├── components/       # Reusable React components
+├── context/          # React Context for state management
+├── hooks/            # Custom React hooks
+├── constants/        # App constants and theme
+└── assets/           # Images and static assets
+```
+
+## Technologies Used
+
+- **React Native** - Cross-platform mobile framework
+- **Expo** - React Native development platform
+- **React Navigation** - App navigation
+- **TypeScript** - Type-safe development
+- **Async Storage** - Local data persistence
+- **React Native Gifted Charts** - Data visualization
+- **React Native Reanimated** - Smooth animations
+
+## Scripts
+
+```bash
+npm start          # Start development server
+npm run android    # Run on Android emulator
+npm run ios        # Run on iOS simulator
+npm run web        # Run on web browser
+npm run lint       # Run ESLint
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues and submit pull requests.
+
+## License
+
+This project is private. Contact the maintainer for usage inquiries.
+
+## Support
+
+For issues, questions, or suggestions, please open an issue on the [GitHub repository](https://github.com/himal-cmb/FuelTracker).
